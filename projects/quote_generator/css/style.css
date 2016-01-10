@@ -43,10 +43,7 @@ h1{
 	height: 200px;
 	display: inline-block;
 	border-radius: 50%;
-	background-color: #bbb;
-	background-image: url("../img/gandhi1.jpg");
-	background-repeat: no-repeat;
-	background-size: 200px;
+	background: #bbb url("../img/Gandhi1.jpg") no-repeat;
 	position: relative;
 	z-index: 1;
 }
@@ -54,9 +51,7 @@ h1{
 #refresh{
 	width: 32px;
 	height: 32px;
-	background-color: #ccc;
-	background-image: url("../img/refresh.png");
-	background-repeat: no-repeat;
+	background: #ccc url("../img/refresh.png") no-repeat;
 	background-size: 32px;
 	position: absolute;
 	right: 15px;
@@ -75,7 +70,6 @@ h1{
 	border-radius: 8px;
 	background-color: #517295;
 	overflow: auto;
-	
 }
 
 #quote{
@@ -84,7 +78,6 @@ h1{
 	font-style: italic;
 	font-size: 24px;
 	text-align: right;
-	
 }
 
 #author{
