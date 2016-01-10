@@ -1,0 +1,93 @@
+*{
+	margin : 0px;
+	border : 0px;
+	box-sizing : border-box;
+	-webkit-box-sizing : border-box;
+	-o-box-sizing : border-box;
+	-moz-box-sizing : border-box;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+body{
+	background-color: #32567B;
+	color: #7E99B5;
+}
+
+#wrapper{
+	width: 720px;
+	margin: 30px auto;
+	position: relative;
+	overflow: auto;
+}
+
+h1{
+	text-align: center;
+	font-family: cursive;
+	font-weight: 400;
+	margin-top: 50px;
+}
+
+#image{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: #bbb;
+	background-image: url("../img/gandhi1.jpg");
+	background-repeat: no-repeat;
+	background-size: 200px;
+	position: relative;
+	z-index: 1;
+}
+
+#refresh{
+	width: 32px;
+	height: 32px;
+	background-color: #ccc;
+	background-image: url("../img/refresh.png");
+	background-repeat: no-repeat;
+	background-size: 32px;
+	position: absolute;
+	right: 15px;
+	bottom: 0px;
+	cursor: pointer;
+}
+
+#quote-container{
+	width: 600px;
+	float: right;
+	border: 2px solid #0A294A;
+	position: absolute;
+	top : 50px;
+	right: 0px;
+	padding: 10px 10px 10px 90px;
+	border-radius: 8px;
+	background-color: #517295;
+	overflow: auto;
+	
+}
+
+#quote{
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 24px;
+	text-align: right;
+	
+}
+
+#author{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
