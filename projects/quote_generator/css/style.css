@@ -60,11 +60,18 @@ h1{
 	cursor: pointer;
 }
 
-#social{
+#social1{
 	position: absolute;
-	right: 47px;
-	bottom: 0px;
+	right: 57px;
+	bottom: 5px;
 }
+
+#social2{
+	position: absolute;
+	right: 80px;
+	bottom: 5px;
+}
+
 #quote-container{
 	width: 600px;
 	float: right;
