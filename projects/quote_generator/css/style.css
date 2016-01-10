@@ -60,6 +60,11 @@ h1{
 	cursor: pointer;
 }
 
+#social{
+	position: absolute;
+	right: 47px;
+	bottom: 0px;
+}
 #quote-container{
 	width: 600px;
 	float: right;
