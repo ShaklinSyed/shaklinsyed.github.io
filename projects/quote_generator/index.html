@@ -13,6 +13,16 @@
 	</head>
 
 	<body>
+		<!-- fb code -->
+		<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+			
 		<h1>Food For Thought</h1>
 
 		<div id="wrapper">
@@ -21,9 +31,11 @@
 				<p id="quote" class="right">Happiness is when what you think, what you say, and what you do are in harmony.</p>
 				<p id="author" class="clear right">-Mahatma Gandhi</p>
 			</div>
+			
 			<div id="refresh" class="clear">
 				<!-- <span class="glyphicons glyphicons-refresh"></span> -->
 			</div>
+			<div class="fb-like" data-href="http://shaklinsyed.github.io/projects/quote_generator/index.html" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
 		</div>
 	
 	</body>
