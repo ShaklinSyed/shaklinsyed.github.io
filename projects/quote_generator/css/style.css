@@ -43,14 +43,8 @@ h1{
 	height: 200px;
 	display: inline-block;
 	border-radius: 50%;
-<<<<<<< HEAD
 	background: #bbb url("../img/Gandhi1.jpg") no-repeat;
-=======
-	background-color: #bbb;
-	background-image: url("../img/Gandhi1.jpg");
-	background-repeat: no-repeat;
 	background-size: 200px;
->>>>>>> cd2ab78c054ef2813dd20df161a59f27baa78243
 	position: relative;
 	z-index: 1;
 }
