@@ -24,13 +24,6 @@ body{
 	color: #7E99B5;
 }
 
-#wrapper{
-	width: 720px;
-	margin: 30px auto;
-	position: relative;
-	overflow: auto;
-}
-
 h1{
 	text-align: center;
 	font-family: cursive;
@@ -38,15 +31,27 @@ h1{
 	margin-top: 50px;
 }
 
-#image{
+#wrapper{
+	width: 720px;
+	margin: 30px auto;
+	overflow: auto;
+}
+
+/*#image{
 	width: 200px;
 	height: 200px;
 	display: inline-block;
-	border-radius: 50%;
-	background: #bbb url("../img/Gandhi1.jpg") no-repeat;
+	background-color: #bbb;
+	background-repeat:  no-repeat;
 	background-size: 200px;
 	position: relative;
 	z-index: 1;
+}*/
+
+#social-container{
+	margin: 0px auto;
+	margin-top :40px;
+	position: relative;
 }
 
 #refresh{
@@ -54,35 +59,39 @@ h1{
 	height: 32px;
 	background: #ccc url("../img/refresh.png") no-repeat;
 	background-size: 32px;
-	position: absolute;
-	right: 15px;
-	bottom: 0px;
 	cursor: pointer;
+	position: absolute;
+	bottom: 0px;
+	left: 430px;
+
 }
 
 #social1{
 	position: absolute;
-	right: 57px;
+	left: 300px;
 	bottom: 0px;
 }
 
 #social2{
 	position: absolute;
-	right: 135px;
+	left: 370px;
 	bottom: 5px;
 }
 
 #quote-container{
 	width: 600px;
-	float: right;
+	min-height: 100px;
+	/*float: right;*/
 	border: 2px solid #0A294A;
-	position: absolute;
-	top : 50px;
-	right: 0px;
-	padding: 10px 10px 10px 90px;
+	/*position: relative;*/
+	/*top : 50px;*/
+	/*right: 0px;*/
+	padding: 10px ;
 	border-radius: 8px;
 	background-color: #517295;
 	overflow: auto;
+	text-align: center;
+	margin: 0px auto;
 }
 
 #quote{
@@ -90,10 +99,15 @@ h1{
 	font-weight: 400;
 	font-style: italic;
 	font-size: 24px;
-	text-align: right;
+	/*text-align: right;*/
 }
 
 #author{
+	/*position: absolute;*/
+	text-align: center;
+/*	right: 10px;
+	bottom: 10px;*/
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
+	padding-top :10px;
 }
