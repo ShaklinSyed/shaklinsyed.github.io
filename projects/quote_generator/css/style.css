@@ -71,7 +71,7 @@ h1{
 	border-radius: 50%;
 	background-color: #bbb;
 	background-repeat: no-repeat;
-	/*background-size: 200px;*/
+	background-size: 200px;
 	position: relative;
 	z-index: 1;
 }
