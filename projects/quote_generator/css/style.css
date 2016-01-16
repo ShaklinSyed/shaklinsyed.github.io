@@ -38,13 +38,40 @@ h1{
 	margin-top: 50px;
 }
 
+#quote-container{
+	width: 600px;
+	min-height: 100px;
+	border: 2px solid #0A294A;
+	position: absolute;
+	top : 50px;
+	right: 0px;
+	padding: 10px 10px 10px 90px;
+	border-radius: 8px;
+	background-color: #517295;
+	overflow: auto;
+}
+
+#quote{
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 24px;
+	text-align: right;
+}
+
+#author{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+
 #image{
 	width: 200px;
 	height: 200px;
 	display: inline-block;
 	border-radius: 50%;
-	background: #bbb url("../img/Gandhi1.jpg") no-repeat;
-	background-size: 200px;
+	background-color: #bbb;
+	background-repeat: no-repeat;
+	/*background-size: 200px;*/
 	position: relative;
 	z-index: 1;
 }
@@ -72,28 +99,3 @@ h1{
 	bottom: 5px;
 }
 
-#quote-container{
-	width: 600px;
-	float: right;
-	border: 2px solid #0A294A;
-	position: absolute;
-	top : 50px;
-	right: 0px;
-	padding: 10px 10px 10px 90px;
-	border-radius: 8px;
-	background-color: #517295;
-	overflow: auto;
-}
-
-#quote{
-	font-family: 'Merriweather', serif;
-	font-weight: 400;
-	font-style: italic;
-	font-size: 24px;
-	text-align: right;
-}
-
-#author{
-	font-family: 'Oswald', sans-serif;
-	font-weight: 300;
-}
