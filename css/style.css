@@ -36,8 +36,6 @@ footer a{
 	color: #228899;
 }
 
-
-/*for 480 px*/
 #social{
 	position: fixed;
 	right: -6px;
@@ -123,7 +121,6 @@ footer {
 	padding: 10px 0px;
 }
 
-/*@media (max-width: @screen-xs-max) { }*/
 @media (min-width: 768px) and (max-width: 991px) { 
 	.profile-pic{
 		width: 200px;
@@ -167,7 +164,6 @@ footer {
 	}
 }
 
-/* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 	.profile-pic{
 		width: 250px;
