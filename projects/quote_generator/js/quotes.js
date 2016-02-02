@@ -6,7 +6,7 @@ var quotes_list = [
 		author : "Mahatma Gandhi",
 	},
 	{
-		url : " ",
+		url : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Buddha-little.statue.jpg/194px-Buddha-little.statue.jpg",
 		quote : "Ardently do today what must be done. Who knows? Tomorrow, death comes.",
 		author : "Gautama Buddha",
 	},
@@ -21,7 +21,7 @@ var quotes_list = [
 		author : "J. D. Salinger"
 	},
 	{
-		url : " ",
+		url : "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Isaac.Asimov01.jpg/331px-Isaac.Asimov01.jpg",
 		quote : "It pays to be obvious, especially if you have a reputation for subtlety.",
 		author : "Isaac Asimov",
 	},
@@ -36,7 +36,7 @@ var quotes_list = [
 		author : "Alexander Hamilton",
 	},
 	{
-		url : " ",
+		url : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Robert_E_Lee_%28color%29.jpg/202px-Robert_E_Lee_%28color%29.jpg",
 		quote : "It is well that war is so terrible — lest we should grow too fond of it.",
 		author : "Robert E. Lee",
 	},
