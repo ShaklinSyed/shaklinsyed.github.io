@@ -12,7 +12,7 @@ var quotes_list = [
 	},
 	{
 		url : " ",
-		quote : "live the life you love and love the life you live.",
+		quote : "Live the life you love and love the life you live.",
 		author : "Bob Marley",
 	},
 	{
