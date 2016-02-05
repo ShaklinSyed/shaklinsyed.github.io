@@ -3,10 +3,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Happiness is when what you think, what you say, and what you do are in harmony. Random Quote Machine</title>
-		<link href='https://fonts.googleapis.com/css?family=Merriweather:400italic' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Food For Thought</title>
+		<link href='https://fonts.googleapis.com/css?family=Merriweather:400italic|Oswald:300' rel='stylesheet' type='text/css'>
 
+		
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="js/quotes.js"></script>
@@ -14,46 +15,22 @@
 	</head>
 
 	<body>
-		<!-- fb code -->
-		<div id="fb-root"></div>
-			<script>(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
+		
 
 		<h1>Food For Thought</h1>
 
 		<div id="wrapper">
-			<div id="image" class="left"></div>
-			<div id="quote-container" class="right">
+			
+			<div id="quote-container">
 				<p id="quote" class="right">Happiness is when what you think, what you say, and what you do are in harmony.</p>
 				<p id="author" class="clear right">-Mahatma Gandhi</p>
 			</div>
 			
-			<div id="refresh" class="clear">
-				<!-- <span class="glyphicons glyphicons-refresh"></span> -->
-			</div>
-			<div  id="social1" class="right">
-			<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://goo.gl/TaEpJm" data-hashtags="quote">Tweet</a>
-			<script>
-			!function(d,s,id){
-				var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-				if(!d.getElementById(id)){
-					js=d.createElement(s);
-					js.id=id;
-					js.src=p+'://platform.twitter.com/widgets.js';
-					fjs.parentNode.insertBefore(js,fjs);
-				}
-			}(document, 'script', 'twitter-wjs');</script>
-			</div>
+			<div id="refresh" class="clear"></div>
 
-			<div id="social2" class="right">
-				<div class="fb-like" data-href="http://shaklinsyed.github.io/projects/quote_generator/index.html" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+			<div  id="social1" class="right">
+				<a id="twtbtn" href=""><img id="t-logo" src="img/twitter_logo.png"></a>
 			</div>
-			
 		</div>
 	
 	</body>
