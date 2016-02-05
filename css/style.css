@@ -89,7 +89,13 @@ h2{
 		border-radius: 5px;
 }
 
-.pro + p{
+.proimg1{
+	background: #333 url("../img/quotes.png");
+	background-origin: border-box;
+}
+
+.pro + a{
+	display: block;
 	min-width: 200px;
 	max-width: 250px;
 	margin-top : 5px;
@@ -101,7 +107,7 @@ h2{
 
 }
 
-.pro + p + p{
+.pro + a + p{
 	min-width: 200px;
 	max-width: 250px;
 	font-weight: 300;
