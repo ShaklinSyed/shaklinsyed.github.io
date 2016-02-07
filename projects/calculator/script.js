@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded",function(){
 	var operator = "";
 	var operand;
 	var Num = "";
+	var equalResult = "";
 
 	function getNumber(){
 		console.log(this.innerHTML);
@@ -37,18 +38,34 @@ document.addEventListener("DOMContentLoaded",function(){
 	}
 
 	function getOperator(){
-		if(operator == ""){
+		
+		 if(equalResult != ""){
+			operand = equalResult;
+			operator = this.innerHTML;
+		}
+		else if(operator == ""){
 			operand = Num;
 			Num = "";
 			operator = this.innerHTML;
 		}
-		else{
-			var tempOperator = this.innerHTML;
-			operation();
-			operand = Num;
-			Num = "";
-			operator = tempOperator;
+		else if(operator != ""){
+			if(operand != "" && Num == ""){
+				operator = this.innerHTML;
+				console.log("Inside Not equal", operator, operand, Num);
+			}
+			else{
+				var tempOperator = this.innerHTML;
+				console.log(operand,Num);
+				operation();
+				operand = Num;
+				Num = "";
+				operator = tempOperator;
+				console.log(operand,Num);
+			}
 		}
+		
+
+		console.log("operator : ", operator);
 		
 	}
 
@@ -142,17 +159,22 @@ document.addEventListener("DOMContentLoaded",function(){
 	function displayClear(){
 		result.innerHTML = 0;
 		acc.innerHTML = "AC";
-		operand = 0;
+		operand = "";
 		Num = "";
+		equalResult = "";
+		// console.log(oper)
 	}
 
 	function equalTo(){
+		console.log("inside equal");
 		operation();
-
+		console.log(equalResult, Num, operator);		
+		equalResult = Num;
 		Num = "";
 		operator = "";
-
+		console.log(equalResult, Num, operator);	
 	}
+
 	one.addEventListener("click",getNumber);
 	two.addEventListener("click",getNumber);
 	three.addEventListener("click",getNumber);
