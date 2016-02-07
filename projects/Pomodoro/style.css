@@ -1,0 +1,54 @@
+*{
+	border: 0px;
+	margin: 0px;
+	box-sizing : border-box;
+	-webkit-box-sizing : border-box;
+	-moz-box-sizing : border-box;
+	-o-box-sizing : border-box;
+}
+
+body{
+	margin-top: 100px;
+	font-family: Arial;
+	color: #555;
+}
+.wrapper{
+	width: 280px;
+	/*padding: 10px;*/
+	margin: 0 auto;
+	border :1px solid black;
+	text-align: center;
+}
+
+.main{
+	margin: 10px;
+	padding: 10px;
+	font-size: 30px;
+	border-bottom: 1px solid #000;
+}
+
+.main p{
+	font-size:  36px;
+}
+.main button{
+	width: 50px;
+	height: 25px; 
+	background: #eee;
+	color: #555;
+}
+
+.length{
+	padding: 10px;
+	display: inline-block;
+	width: 49%;
+}
+
+.length button{
+	margin-top: 5px;
+	width: 25px;
+	height: 25px;
+}
+
+button{
+	cursor: pointer;
+}
