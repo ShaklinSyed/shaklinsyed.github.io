@@ -89,7 +89,9 @@ document.addEventListener("DOMContentLoaded",function(){
 	}
 
 	function getPoint(){
-		if(Num == "" || Num == Math.round(Num)){
+
+		if(Num == "" || Num == Math.round(Num)  &&  Num.indexOf('.') ==  -1 ){
+			console.log(Num.indexOf('.'), "lol");
 			console.log(this.innerHTML);
 			Num += this.innerHTML;
 			displayResult();
