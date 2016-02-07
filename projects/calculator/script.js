@@ -31,14 +31,17 @@ document.addEventListener("DOMContentLoaded",function(){
 	var equalResult = "";
 
 	function getNumber(){
-		console.log(this.innerHTML);
+		console.log(this.innerHTML, "getNumber");
 		Num += this.innerHTML;
 		displayResult();
 		acc.innerHTML= "C";
+		// console.log(equalResult,operand,Num,"Get Number");
+		if(equalResult != ""){
+			equalResult = 0;
+		}
 	}
 
 	function getOperator(){
-		
 		 if(equalResult != ""){
 			operand = equalResult;
 			operator = this.innerHTML;
@@ -63,14 +66,12 @@ document.addEventListener("DOMContentLoaded",function(){
 				console.log(operand,Num);
 			}
 		}
-		
-
-		console.log("operator : ", operator);
+		console.log("operator : ", operator,"getOperator");
 		
 	}
 
 	function displayResult(){
-		console.log(Num);
+		console.log(Num, "displayResult");
 		result.innerHTML = Num;
 	}
 
@@ -119,7 +120,7 @@ document.addEventListener("DOMContentLoaded",function(){
 	}
 
 	function operation(){
-		console.log(operand,Num,operator);
+		console.log(operand,Num,operator,"operation");
 		switch(operator){
 			case '+':
 				Num = String(addition(operand,Number(Num)));
