@@ -91,7 +91,11 @@ h2{
 
 .proimg1{
 	background: #333 url("../img/quotes.png");
-	background-origin: border-box;
+
+}
+
+.proimg2{
+	background: #333 url("../img/calculator.png");
 }
 
 .pro + a{
