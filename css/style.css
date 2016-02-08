@@ -91,11 +91,14 @@ h2{
 
 .proimg1{
 	background: #333 url("../img/quotes.png");
-
 }
 
 .proimg2{
 	background: #333 url("../img/calculator.png");
+}
+
+.proimg3{
+	background: #333 url("../img/pomodoro.png");
 }
 
 .pro + a{
