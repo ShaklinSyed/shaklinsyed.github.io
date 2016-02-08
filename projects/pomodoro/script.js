@@ -72,40 +72,11 @@ document.addEventListener("DOMContentLoaded",function(){
 		else{
 			minutes = Number(breLen.innerHTML);
 		}
-
-		if(minutes > 1){
-			// if(sec.innerHTML != 0){
-			// 	seconds = minutes * 60 - (60 - Number(sec.innerHTML));
-			// }
-			// else{
-			// 	seconds = minutes * 60 ;
-			// }
-			seconds = minutes * 60 ;
-			--minutes;
-		}
-		else if(minutes == 1){
-			seconds = 59;
-			minutes = 0;
-		}
-		// else{
-		// 	if(sec.innerHTML != 0){
-		// 		seconds = 60 - (60 - Number(sec.innerHTML));
-		// 	}
-		// 	else{
-		// 		minutes = 0;
-		// 		seconds = 59;
-		// 	}
-		// }
+		seconds = minutes * 60;
 		console.log(minutes, seconds);
 	}
 
-	// function callBreak(){
-	// 	minutes = Number(breLen.innerHTML);
-	// 	seconds = (minutes * 60) - 1;
-	// }
 	function displayTime(){
-		--seconds;
-
 		if(minutes == 0 && seconds == 0){
 			if(sesInfo.innerHTML == "Session"){
 				sesInfo.innerHTML ="Break";
@@ -120,7 +91,7 @@ document.addEventListener("DOMContentLoaded",function(){
 		if(seconds % 60 == 0){
 			--minutes;
 		}
-		
+		--seconds;
 		min.innerHTML = minutes;
 		
 		if(seconds % 60 < 10){

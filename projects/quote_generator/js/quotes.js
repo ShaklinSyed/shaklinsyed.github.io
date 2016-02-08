@@ -64,6 +64,10 @@ var quotes_list = [
 		quote : "we are busy that we may have leisure, and make war that we may live in peace.",
 		author : "Aristotle",
 	},
+	{
+		quote : "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+		author : "Aristotle",
+	},
 	
 ];
 
