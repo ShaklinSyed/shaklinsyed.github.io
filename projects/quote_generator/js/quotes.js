@@ -76,7 +76,9 @@ function composeTweet(){
 	twtbtn.href = "https://twitter.com/intent/tweet?text=" + 
 					quotes_list[current].quote + "-"+
 					 quotes_list[current].author + "&hastags=" +
-					 "quotes" + "&url=" + "http://goo.gl/TaEpJm" ;
+					 "quotes,thought" + "&url=" + "http://goo.gl/TaEpJm" ;
+					 
+	console.log(twtbtn.href);
 }
 
 function getQuote(){
