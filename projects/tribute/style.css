@@ -1,0 +1,40 @@
+body{
+	margin-top: 50px;
+}
+
+body .container{
+	background-color: #eee;
+	border-radius: 5px;
+}
+
+.top{
+	text-align: center;
+}
+h2{
+	font-style: italic;
+}
+
+img{
+	width: 90%;
+}
+
+.date{
+	font-weight: bold;
+}
+.timeline{
+	margin-top: 30px;
+}
+
+.col-md-push-2{
+	font-size: 1.2em;
+}
+
+.readmore{
+	font-size: 1.6em;
+	margin-left: 20px;
+}
+
+footer p{
+	margin-top: 10px;
+	text-align: center;
+}
