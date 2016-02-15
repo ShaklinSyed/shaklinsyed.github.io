@@ -101,6 +101,9 @@ h2{
 	background: #333 url("../img/pomodoro.png");
 }
 
+.proimg4{
+	background: #333 url("../img/tribute.png")
+}
 .pro + a{
 	display: block;
 	min-width: 200px;
