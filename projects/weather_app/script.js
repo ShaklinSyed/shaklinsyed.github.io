@@ -42,7 +42,6 @@ $(document).ready(function(){
 					$("#climate").text(data.weather[0].main);
 					$("#weather-icon").css("backgroundImage","url(http://openweathermap.org/img/w/"+ data.weather[0].icon + ".png)")
 					
-					$("body").css("backgroundImage","url("+ +")")
 					// var tempTime = new Date(data.sys.sunrise * 1000);
 					// $("#sun-rise").text("0"+tempTime.getHours() + " : " + tempTime.getMinutes());
 
