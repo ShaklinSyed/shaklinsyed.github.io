@@ -104,6 +104,11 @@ h2{
 .proimg4{
 	background: #333 url("../img/tribute.png")
 }
+
+.proimg5{
+	background: #333 url("../img/weather.png")
+}
+
 .pro + a{
 	display: block;
 	max-width: 230px;
