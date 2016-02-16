@@ -2,22 +2,56 @@ html{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
+
 *, *:before, *:after {
 	-webkit-box-sizing: inherit;
 	-moz-box-sizing: inherit;
 	box-sizing: inherit;
 }
 
+body{
+	background : #eef;
+}
+
+h1{
+	font-size: 3em;
+	margin-bottom: 15px;
+	color : #666C5C;
+}
+
 #wrapper{
-	width: 250px;
-	margin-top: 50px;
+	max-width: 400px;
+	text-align: center;
+	margin: 50px auto 0px auto ;
+	border : 1px solid #eee;
 }
+
+#location{
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
 #temperature{
+	display: inline-block;
+	position: relative;
+	top :-16px;
+	margin: 0px;
+	left: 0px;
+	font-size: 2em;
 	cursor: pointer;
+	color :blue;
 }
+
 #weather-icon{
+	display: inline-block;
 	width: 50px;
 	height: 50px;
-	background: #fff;
+}
+
+#climate{
+	margin: 0px;
+	font-size: 1.5em;
 }

@@ -30,22 +30,24 @@ $(document).ready(function(){
 					// 			 " \n Name : " + data.name;
 					// console.log(parsedData);
 					// $("#info").text(parsedData);
+
 					var tempInKelvin = data.main.temp;
 					tempInCel = tempInKelvin - 273.15;
 					tempInfahren = tempInCel * (9/5) + 32;
 					console.log("temperature", tempInKelvin, tempInCel,tempInfahren);
-					console.log(data.name,data.main.temp,data.weather[0].main,data.weather[0].icon);
+					console.log(data.name,data.main.temp,data.weather[0].main,data.weather[0].icon,data.sys.country);
 					
-					$("#location").text(data.name);
+					$("#location").text(data.name + " , " + data.sys.country);
 					$("#temperature").text(tempInCel+"*C");
 					$("#climate").text(data.weather[0].main);
 					$("#weather-icon").css("backgroundImage","url(http://openweathermap.org/img/w/"+ data.weather[0].icon + ".png)")
 					
-					var tempTime = new Date(data.sys.sunrise * 1000);
-					$("#sun-rise").text("0"+tempTime.getHours() + " : " + tempTime.getMinutes());
+					$("body").css("backgroundImage","url("+ +")")
+					// var tempTime = new Date(data.sys.sunrise * 1000);
+					// $("#sun-rise").text("0"+tempTime.getHours() + " : " + tempTime.getMinutes());
 
-					var tempTime = new Date(data.sys.sunset * 1000);
-					$("#sun-set").text(tempTime.getHours() + " : " + tempTime.getMinutes());			
+					// var tempTime = new Date(data.sys.sunset * 1000);
+					// $("#sun-set").text(tempTime.getHours() + " : " + tempTime.getMinutes());			
 				});
 			});
 		}
