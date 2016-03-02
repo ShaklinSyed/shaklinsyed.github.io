@@ -1,10 +1,12 @@
 $("document").ready(function(){
 	console.log("Ready");
 
+	//replaces spaces to underscore
 	function convertSpaces(str){
 		return str.replace(/\s+/gi,"_");
 	}
-	$("#search").on("click",function(){
+
+	function callApi(){
 		var searchText = $("#searchText").val();
 		if($("#resultContainer").has("a").length > 0){
 			$("#resultContainer").text(" ");
@@ -26,7 +28,15 @@ $("document").ready(function(){
 				}
 			});			
 		}
+	}
 
-		$("#searchText").val("");
-	});
+	//Events
+	$("#search").on("click",callApi);
+	$("#searchText").keydown(function(event){
+		console.log(event.keyCode);
+		if(event.keyCode == 13){
+			console.log("Enter clicked");
+			callApi();
+		}
+	})
 });
