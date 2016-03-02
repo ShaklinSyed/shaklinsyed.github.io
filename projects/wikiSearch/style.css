@@ -4,3 +4,49 @@
 	-o-box-sizing : border-box;
 	-moz-box-sizing : border-box;
 }
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+	text-align: center;
+	font-weight: 300;
+}
+#frm{
+	text-align: center;
+}
+
+#searchText{
+	width: 450px;
+	min-width: 200px;
+	font-size: 18px;
+	padding: 5px;
+}
+#search{
+	width: 32px;
+	height: 32px;
+	border: 0px;
+	top: 5px;
+	position: relative;
+	background: url("find.png") no-repeat;
+
+}
+
+#resultContainer{
+	width: 70%;
+	margin: 0px auto;
+}
+
+#spl{
+	text-align: center;
+}
+#resultContainer a{
+	text-decoration: none;
+}
+
+#resultContainer p{
+	margin-top: 0px;
+	border-bottom: 1px solid #eee;
+	border-radius: 1px;
+}

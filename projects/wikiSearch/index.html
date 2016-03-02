@@ -2,23 +2,30 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Wikipedia Viewer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wiki Search</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic' rel='stylesheet' type='text/css'>
 	
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<!-- <script type="text/javascript" src="jquery.min.js"></script> -->
+	<!-- // <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+	<script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-<h1>Wikipedia Viewer</h1>
-<a href="http://en.wikipedia.org/wiki/Special:Random" target="_blank">Special</a>
-<br />
-<br />
+<h1>Wiki Search</h1>
 
-<form>
+
+
+<form id="frm">
 	<input type="text" id="searchText" placeholder="Search for">
-	<input type="button" id="search" value="Search">
+	<input type="button" id="search">
 </form>
+<div id="spl">
+	<a href="http://en.wikipedia.org/wiki/Special:Random" target="_blank">Today's Special Article</a>
+</div>
 	
+<div id="resultContainer">
+
+</div>
 </body>
 </html>
