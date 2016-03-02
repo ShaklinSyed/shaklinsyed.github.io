@@ -102,11 +102,15 @@ h2{
 }
 
 .proimg4{
-	background: #333 url("../img/tribute.png")
+	background: #333 url("../img/tribute.png");
 }
 
 .proimg5{
-	background: #333 url("../img/weather.png")
+	background: #333 url("../img/weather.png");
+}
+
+.proimg6{
+	background: #333 url("../img/wikiSearch.png");
 }
 
 .pro + a{
