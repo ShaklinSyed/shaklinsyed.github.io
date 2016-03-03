@@ -113,7 +113,7 @@ h2{
 	background: #333 url("../img/wikiSearch.png");
 }
 
-.pro + a{
+.projLink{
 	display: block;
 	max-width: 230px;
 	margin-top : 5px;
@@ -125,7 +125,7 @@ h2{
 
 }
 
-.pro + a + p{
+.projDescription{
 	max-width: 230px;
 	font-weight: 300;
 	text-align: center;
@@ -218,10 +218,6 @@ footer {
 		margin-left: -15px;
 	}
 
-	.pro + p{
-		max-width: 200px;
-		padding-left: 20px;
-	}
 	.pro + p + p{
 		max-width: 200px;
 		padding-left: 20px;
