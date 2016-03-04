@@ -1,0 +1,90 @@
+h1{
+	background-color: rgb(90,85,88);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 10px;
+	color: rgb(224,224,229);
+}
+.stream-icon{
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 5px;
+}
+
+.node{
+	border-top: 3px solid #fff;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-family: serif;
+}
+
+.online{
+	background-color :rgba(191,206,145,1);
+	color:#fff;
+}
+
+.offline{
+	background-color: rgb(83,96,126);
+	color:#fff;
+
+}
+
+.game-name{
+	font-style: italic;
+}
+.online .streamer-name{
+	color: rgb(83,96,126);
+}
+
+.online .game-name{
+	font-style: italic;
+	color: rgb(90,85,88);
+}
+
+.offline .streamer-name{
+	color :rgba(191,206,145,1);
+
+}
+
+.offline .game-name{
+	color:rgb(136, 183, 226);
+
+}
+@media (max-width: 767px) {
+	.col-xs-10{
+		text-align: center;
+		margin: 0px;
+		margin-top: 5px;
+	}
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-xs-10{
+		text-align: center;
+		margin: 0px;
+		margin-top: 5px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	h1{
+		padding-left: 50px;
+	}
+	.col-md-5{
+		text-align: center;
+		margin-top: 20px;
+	}
+	.game-name{
+		overflow: auto;
+	}
+}
+@media (min-width: 1200px) { 
+	h1{
+		padding-left: 50px;
+	}
+	.col-md-5{
+		text-align: center;
+		margin-top: 20px;
+	}
+}
