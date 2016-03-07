@@ -12,10 +12,14 @@ body{
 	font-family: Arial;
 	color: #555;
 }
+
+.make-center{
+	margin: 0px auto;
+	width: 335px;
+}
 .wrapper{
 	width: 280px;
-	/*padding: 10px;*/
-	margin: 0 auto;
+	display: inline-block;
 	border :1px solid #eee;
 	text-align: center;
 }
@@ -51,4 +55,28 @@ body{
 
 button{
 	cursor: pointer;
+}
+
+
+/*Adding Tomato*/
+.sidebar{
+	padding-top: 25px;	
+	display: inline-block;
+	width: 44px;
+	height: 231px;
+	background-color: #eee;
+	vertical-align: top;
+}
+
+.tomato{
+	width: 32px;
+	height: 32px;
+	background-color: #fff;
+	border-radius: 50px;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+
+.active{
+	background-color: #f70;
 }
