@@ -14,13 +14,29 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
-				<h1>Twitch Streamers</h1>
+			<div class="top-heading col-xs-12 ">
+				<h1 class="heading">Twitch Streamers</h1>
+				<div class="slider">
+				<div class="options selected-tab" id="all">
+					<div class="icon icon-all"></div>
+					<span class="">ALL</span>
+				</div>
+				<div class="options" id="active">
+					<div class="icon icon-active"></div>
+					<span class="">ONLINE</span>
+				</div>
+				<div class="options" id="offline">
+					<div class="icon icon-offline"></div>
+					<span class="">OFFLINE</span>
+				</div>
+			</div>
 			</div>
 		</div>
 		<div class="load">
 		</div>
-			<!-- <div class="row node online">
+			<!-- 
+			Outline 
+			<div class="row node no-account">
 				<div class="col-xs-2 col-md-2">
 					<div class="stream-icon">
 					</div>

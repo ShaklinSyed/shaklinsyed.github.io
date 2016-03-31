@@ -1,13 +1,98 @@
+.top-heading{
+	background-color: rgb(90,85,88);
+}
+
 h1{
+	display: inline-block;
 	background-color: rgb(90,85,88);
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 10px;
 	color: rgb(224,224,229);
 }
+
+/*css for slider*/
+
+.slider{
+	display: inline-block;
+	width: 80px;	
+	float: right;
+	font-size: 12px;
+	font-weight: bold;
+	padding-bottom: 3px;
+
+	margin-right: -15px;
+}
+
+.options{
+	width: 20px;
+	height: 16px;
+	padding: 2px 0px 2px 5px;
+
+	float: right;
+	clear: both;
+
+	margin-top: 4px;
+
+	overflow: hidden;
+
+	background-color: #eee;
+	color: rgb(123, 97, 57);
+	cursor: pointer;
+
+	transition: width 0.5s linear;
+	-webkit-transition : width 0.5s linear;
+	-moz-transition : width 0.5s linear;
+}
+
+.icon{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+}
+
+.icon-all{
+	background-color: rgb(123, 97, 57);
+}
+
+.icon-active{
+	background-color: rgba(191,206,145,1);
+}
+
+.icon-offline{
+	background-color: rgb(126, 144, 187);
+}
+
+.hide{
+	display: none;
+}
+
+.selected-tab{
+	width: 80px;
+}
+
+.options span{
+	float: right;
+	margin-right: 5px;
+	margin-top : -2px;
+}
+
+.options:hover{
+	width: 80px;
+}
+
+
+/*css for the main content*/
+
+.load {
+	font-size: 16px;
+}
+
 .stream-icon{
-	width: 50px;
-	height: 50px;
+	width: 55px;
+	height: 55px;
+	border : 3px solid #eee;
 	background-color: #fff;
 	border-radius: 50%;
 	margin: 5px;
@@ -15,8 +100,6 @@ h1{
 
 .node{
 	border-top: 3px solid #fff;
-	margin-left: 0px;
-	margin-right: 0px;
 	font-family: serif;
 }
 
@@ -25,16 +108,18 @@ h1{
 	color:#fff;
 }
 
-.offline{
+.offline, .no-account{
 	background-color: rgb(83,96,126);
 	color:#fff;
-
 }
 
 .game-name{
 	font-style: italic;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
-.online .streamer-name{
+.online .streamer-name a{
 	color: rgb(83,96,126);
 }
 
@@ -43,20 +128,33 @@ h1{
 	color: rgb(90,85,88);
 }
 
-.offline .streamer-name{
+.offline .streamer-name a, .no-account .streamer-name{
 	color :rgba(191,206,145,1);
-
 }
 
-.offline .game-name{
+.offline .game-name, .no-account .game-name{
 	color:rgb(136, 183, 226);
-
 }
+
+/*Media Queries*/
 @media (max-width: 767px) {
+	.heading{
+		width: 200px;
+
+	}
 	.col-xs-10{
 		text-align: center;
 		margin: 0px;
-		margin-top: 5px;
+		margin-top: 7px;
+	}
+
+	.slider{
+		transform: translateY(25%);
+
+	}
+
+	.game-name span{
+		display: none;
 	}
 
 }
@@ -73,7 +171,7 @@ h1{
 	}
 	.col-md-5{
 		text-align: center;
-		margin-top: 20px;
+		margin-top: 24px;
 	}
 	.game-name{
 		overflow: auto;
@@ -85,6 +183,6 @@ h1{
 	}
 	.col-md-5{
 		text-align: center;
-		margin-top: 20px;
+		margin-top: 24px;
 	}
 }
