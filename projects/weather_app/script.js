@@ -40,7 +40,7 @@ $(document).ready(function(){
 					$("#location").text(data.name + " , " + data.sys.country);
 					$("#temperature").text(tempInCel+"*C");
 					$("#climate").text(data.weather[0].main);
-					$("#weather-icon").css("backgroundImage","url(http://openweathermap.org/img/w/"+ data.weather[0].icon + ".png)")
+					$("#weather-icon").css("backgroundImage","url(http://openweathermap.org/img/w/"+ data.weather[0].icon + ".png)");
 					
 					// var tempTime = new Date(data.sys.sunrise * 1000);
 					// $("#sun-rise").text("0"+tempTime.getHours() + " : " + tempTime.getMinutes());

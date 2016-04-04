@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pomodoro Clock</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
@@ -12,7 +14,7 @@
 <div class="wrapper">
 	<div class="main">
 		<p id="sesInfo">Session</p>
-		<p><span id="min">25</span>:<span id="sec">00</span></p>
+		<p><span id="min">1</span>:<span id="sec">00</span></p>
 		<button type="button" id="start">Start</button>
 		<!-- <button type="button" id="pause">Pause</button> -->
 		<button type="button" id="reset">Reset</button>
@@ -20,24 +22,24 @@
 	<div class="length">
 		<p>Session Length</p>
 		<button type="button" id="sesPlus">+</button>
-		<span id="sesLen">25</span>
+		<span id="sesLen">1</span>
 		<button type="button" id="sesMin">-</button>
 	</div>
 	
 	<div class="length">
 		<p>Break Length</p>
 		<button type="button" id="brePlus">+</button>
-		<span id="breLen">5</span>
+		<span id="breLen">1</span>
 		<button type="button" id="breMin">-</button>
 	</div>
 </div>
 	<div class="sidebar">
 		<div class="tomato"></div>
 		<div class="tomato"></div>
-		<div class="tomato active"></div>
-		<div class="tomato active"></div>
-		<div class="tomato active"></div>
-		<div class="tomato active"></div>
+		<div class="tomato"></div>
+		<div class="tomato"></div>
+		<div class="tomato"></div>
+		<div class="tomato"></div>
 	</div>
 </div>	
 </body>

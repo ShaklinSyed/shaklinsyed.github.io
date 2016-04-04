@@ -1,3 +1,5 @@
+var sessionCount = -1;
+
 document.addEventListener("DOMContentLoaded",function(){
 	console.log("Ready");
 
@@ -24,7 +26,6 @@ document.addEventListener("DOMContentLoaded",function(){
 
 	function decDur(num){
 		console.log(num);
-
 		return num >1 ? --num: num;
 	}
 
@@ -67,6 +68,10 @@ document.addEventListener("DOMContentLoaded",function(){
 
 	function setTimeInfo(){
 		if(sesInfo.innerHTML == "Session"){
+			sessionCount++;
+			addTomato();
+			console.log(sessionCount,"call adding tomato above");
+			
 			minutes = Number(sesLen.innerHTML);
 		}
 		else{
@@ -101,7 +106,7 @@ document.addEventListener("DOMContentLoaded",function(){
 			sec.innerHTML = seconds % 60;
 		}
 
-		console.log(minutes,seconds);
+		// console.log(minutes,seconds);
 	}
 
 	var timeOut;
@@ -127,3 +132,11 @@ document.addEventListener("DOMContentLoaded",function(){
 	// pause.addEventListener("click",pauseTimer);
 	reset.addEventListener("click",resetTimer);
 });
+
+
+function addTomato(){
+	console.log(sessionCount, "Adding tomato");
+	console.log("length of tomato classes",$(".tomato").length);
+	var tomaElements = $(".tomato");
+	// tomato[length].Addclass("active")
+}
