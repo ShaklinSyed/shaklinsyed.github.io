@@ -3,33 +3,36 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pomodoro Clock</title>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="js/lib.js"></script>
+	<script type="text/javascript" src="js/cript.js"></script>
 </head>
 <body>
 <div class="make-center">
-
+<h1>Pomodoro</h1>
 <div class="wrapper">
 	<div class="main">
 		<p id="sesInfo">Session</p>
-		<p><span id="min">1</span>:<span id="sec">00</span></p>
+		<p><span id="min" class="sesLen">01</span>:<span id="sec">00</span></p>
+
 		<button type="button" id="start">Start</button>
-		<!-- <button type="button" id="pause">Pause</button> -->
+		<button type="button" id="pause">Pause</button>
 		<button type="button" id="reset">Reset</button>
 	</div>
 	<div class="length">
 		<p>Session Length</p>
 		<button type="button" id="sesPlus">+</button>
-		<span id="sesLen">1</span>
+		<span id="sesLen" class="sesLen">01</span>
 		<button type="button" id="sesMin">-</button>
 	</div>
 	
 	<div class="length">
 		<p>Break Length</p>
 		<button type="button" id="brePlus">+</button>
-		<span id="breLen">1</span>
+		<span id="breLen" class="breLen">01</span>
 		<button type="button" id="breMin">-</button>
 	</div>
 </div>
