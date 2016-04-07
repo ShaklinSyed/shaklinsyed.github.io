@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded",function(){
 	var context = canvas.getContext("2d");
 
 	var teaDrops = [],
-		xC = 0,
+		xC = 320,
 		yC = 0,
 		score = 0,
 		speed = 20,
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded",function(){
 			randX = Math.floor(Math.random() * (maxX - minX)) + minX;
 			teaDrops.push({"x" : randX, "y" : y});
 		}
-		if(pourCount <= 5){
+		if(pourCount <= 5 && score <5){
 			drawTeaPot();			
 		}
 	}
