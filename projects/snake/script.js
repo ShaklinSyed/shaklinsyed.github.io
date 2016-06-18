@@ -89,7 +89,7 @@ $(document).ready(function(){
 			}
 
 			if(snake.arr[0].x <= 750 && snake.arr[0].x >= 0 && snake.arr[0].y <= 600 && snake.arr[0].y >= 0){
-				console.log(snake.arr);
+				// console.log(snake.arr);
 				snake.drawSnake();
 			}
 			else{
