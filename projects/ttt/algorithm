@@ -1,0 +1,28 @@
+public Best ChooseMove(Boolean Side){
+	Best myBest = new Best();
+	Best reply;
+
+	if(current grid is full or has a win){
+		return a Best with Grids score, no more;
+	}
+
+	if(side == computer){
+		my Best.score = -2;
+	}
+	else{
+		my Best.score = 2;
+	}
+
+	for(each legal move m){
+		perform move m;
+		reply = choose move(!move);
+		undo move m;
+
+		if(((side == Computer) && (reply.score > myBest.score)) || ((side==human) && (reply.score < myBest.score))){
+			myBest.move = m;
+			myBest.score = reply.score;
+		}
+	}
+
+	return myBest;
+}

@@ -1,0 +1,114 @@
+*{
+	border: 0px;
+	margin: 0px;
+	box-sizing : border-box;
+	-webkit-box-sizing : border-box;
+	-moz-box-sizing : border-box;
+	-o-box-sizing : border-box;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+	-o-box-sizing : inherit;
+  	box-sizing: inherit;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+body{
+	background-color: #eee;
+}
+
+h1{
+	text-align: center;
+	color: #555;
+	margin: 15px auto;
+}
+
+.container{
+	width: 375px;
+	padding: 25px;
+	margin: 0px auto;
+	background-color: #000;
+	font-family: sans-serif;
+}
+	.ele{
+		width: 122px;	
+		height: 122px;		
+		display: inline-block;
+		background-color: #000;
+		float: left;
+		font-size: 20px;
+		line-height: 6em;
+		text-align: center;
+		color: #eee;
+	}
+
+	.bot-bor{
+		border-bottom: 3px solid #63A25D;
+	}
+
+	.rig-bor{
+		border-right: 3px solid #63A25D;
+	}
+
+.box{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	overflow: auto;
+	padding-top: 100px;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+	display: block; 
+	/*Testing*/
+	/*display: none;*/
+}
+	.innerBox{
+		width: 40%;
+		margin: auto;
+		padding : 20px;
+		background-color: #fff;
+		font-size: 28px;
+		border-radius: 3px;
+		font-family: Arial;
+		overflow: auto;
+
+	}
+
+	.innerBox p{
+		text-align: center;
+		color: #fff;
+		background-color: #000;
+		padding: 20px;
+		border-radius: 3px;
+	}
+
+	.tttjs{
+		border-bottom: 1px solid #fff;
+	}
+
+	.innerBox button{
+		float: right;
+		margin-top: 10px;
+		margin-right: 2px;
+		width: 25px;
+		height: 30px;
+		background-color: #000;
+		color:#fff;
+	}
+
+	#x, #o{
+		cursor: pointer;
+		border-radius: 3px;
+	}
