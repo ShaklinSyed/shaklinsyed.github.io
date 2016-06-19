@@ -113,6 +113,22 @@ h2{
 	background: #333 url("../img/wikiSearch.png");
 }
 
+.proimg7{
+	background: #333 url("../img/snake.png");
+}
+
+.proimg8{
+	background: #333 url("../img/teaKettle.png");
+}
+
+.proimg9{
+	background: #333 url("../img/ttt.png");
+}
+
+.proimg10{
+	background: #333 url("../img/streamersInfo.png");
+}
+
 .projLink{
 	display: block;
 	max-width: 230px;
