@@ -9,7 +9,7 @@
 	
 	<body>
 	<h1>Simon</h1>
-	
+	<div id="wrapper">
 	<div id="score-box">
 		Count
 		<div id="count">
@@ -22,6 +22,7 @@
 			<input type="button" value="Strict" id="strict">
 		</div>
 	</div>
+
 	<div id="onoffContainer">
 	<span class="selection">OFF</span> 
 	<div id="onoff">
@@ -30,11 +31,18 @@
 	</div>
 	<span class="selection">ON</span>
 	</div>
-	<div>
-		<input type="button" class="btn" id="blue" />
-		<input type="button" class="btn" id="red" />
-		<input type="button" class="btn" id="yellow" />
-		<input type="button" class="btn" id="green" />
+
+	</div>
+
+	<div class="buttons">
+		<div class="row">
+			<input type="button" class="btn" id="yellow" />
+			<input type="button" class="btn" id="blue" />
+		</div>
+		<div class="row">
+			<input type="button" class="btn" id="green" />
+			<input type="button" class="btn" id="red" />	
+		</div>
 	</div>
 		
 	</body>

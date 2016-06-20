@@ -9,8 +9,8 @@
 }
 
 .btn{
-	width: 145px;
-	height: 100px;
+	width: 49%;
+	height: 160px;
 	border : 0px;
 	outline: none;
 }
@@ -21,6 +21,18 @@ body{
 	background-color: #eee;
 }
 
+h1{
+	text-align: center;
+}
+
+#wrapper{
+	width: 250px;
+	margin: 0px auto;
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding-bottom: 12px;
+	background-color: antiquewhite;
+}
 #blue{
 	background-color: blue;
 }
@@ -39,12 +51,13 @@ body{
 
 
 .border{
-	border : 2px solid #aaa;
+	border : 3px solid #aaa;
 }
 #score-box{
-	width: 200px;
+	width: 160px;
 	margin: 0px auto;
 	margin-bottom: 20px;
+	padding-top: 12px;
 }
 
 #count{
@@ -107,4 +120,15 @@ body{
 input{
 	/*cursor: pointer;*/
 	text-decoration: none;
+}
+
+.buttons{
+	width: 80%;
+	margin: 0px auto;
+	z-index: -1;
+	margin-top: 30px;
+}
+
+.row{
+	width: 100%;
 }

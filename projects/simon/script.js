@@ -19,7 +19,7 @@ $("document").ready(function(){
 	function createInterval(i){
 		return setTimeout(function(){
 					Game.computerTurn(Game.pattern[i-1]);
-					console.log(Game.pattern[i-1], Game.pattern, i-1);
+					// console.log(Game.pattern[i-1], Game.pattern, i-1);
 				}, i * 1000);
 	}
 
@@ -28,6 +28,7 @@ $("document").ready(function(){
 		pattern : [],
 		turn : "COMPUTER",
 		inter : [],
+		mode : "",
 
 		createPattern : function(){
 			for(var i=0;i<20;i++){
@@ -37,6 +38,12 @@ $("document").ready(function(){
 
 		play : function(){
 			Game.count++;
+
+			if(count == 22){
+				alert("You Have Championed the Game");
+				reset();
+				Game.play();
+			}
 			$("#count").html(util.padNum(Game.count - 1));
 
 			// $("#count").html(util.padNum(Game.count));
@@ -104,26 +111,47 @@ $("document").ready(function(){
 	var result = new Array();
 	var noTimesPressed = 0;
 
+	function reset(){
+		Game.count = 1;
+		Game.pattern.length = 0;
+		Game.createPattern();
+		noTimesPressed = 0;
+		result.length = 0;
+
+		for(var i=0;i<Game.inter.length;i++){
+			clearTimeout(Game.inter[i]);
+		}
+	}
+
 	function checkResult(){
 		for(var i=0;i< noTimesPressed;i++){
 			if(result[i] == Game.pattern[i]){
 				console.log("true");
 			}
 			
-			console.log(i, "clicked :",  result[i], Game.pattern[i]);
+			// console.log(i, "clicked :",  result[i], Game.pattern[i]);
+
+			if(result[i] != Game.pattern[i] && Game.mode == "STRICT"){
+				// console.log("false");
+				reset();
+				var temp  = setTimeout(function(){
+					Game.play();
+				},1000);
+			}
 
 			if(result[i] != Game.pattern[i]){
-				console.log("false");
+				// console.log("false");
 				Game.count -= 1;
 				noTimesPressed = 0;
 				result.length = 0;
+				$("#count").html("!!");
 				var temp  = setTimeout(function(){
 					Game.play();
 				},1000);
 			}
 
 			else if(i == Game.count-2){
-				console.log("back to COMPUTER");
+				// console.log("back to COMPUTER");
 				Game.turn == "COMPUTER";
 				noTimesPressed =0;
 				result.length = 0;
@@ -180,35 +208,41 @@ $("document").ready(function(){
 		}
 		else{
 			$("#on").css("float","left");
+			$("#count").html("- -");
+			$("#pointer").css("background-color","rgb(0, 0, 0)");
+			reset();
+			Game.turn = "COMPUTER";
+
 		}
 		console.log(orientation);
 	});
 
-	// Start HERE <-------------------------
+	// Game starts HERE <-------------------------
 	Game.createPattern();
 	$("#start").on("click",function(){
 		var orientation = $("#on").css("float");
-		// debugger
 		if(orientation == "right"){
+			reset();
 			Game.play();
 		}
 	});
 
+	$("#strict").on("click",function(){
+		var orientation = $("#on").css("float");
+		var pointer = $("#pointer").css("background-color");
 
-	// $("#strict").on("click",function(){
-	// 	var color = $("#pointer").css("background-color");
-	// 	console.log(color);
-	// 	var orientation = $("#on").css("float");
+		console.log(pointer);
+		if(orientation == "right"){
+			if(pointer == "rgb(0, 0, 0)"){
+				Game.mode = "STRICT";
+				$("#pointer").css("background-color","red");
+			}
+			else{
+				Game.mode = "";
+				$("#pointer").css("background-color","rgb(0, 0, 0)")
+			}
 
-	// 	if(orientation == "right"){
-	// 		if(color == "rgb(0, 0, 0)"){
-	// 			console.log("inside blac");
-	// 			$("#pointer").css("background-color","rgb(255,0,0)");
-	// 		}
-	// 		else{
-	// 			$("#pointer").css("background-color","rgb(0,0,0)");
-	// 		}
-	// 	}
-	// });
+		}
+	});
 });
 
