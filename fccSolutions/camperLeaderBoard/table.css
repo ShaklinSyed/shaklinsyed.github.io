@@ -1,0 +1,45 @@
+table{
+	margin-top: 10px;
+}
+caption{
+	text-align: center;
+	background-color: brown;
+	border-radius: 5px 5px 0px 0px;
+	color: white;
+	font-size: 24px;
+}
+
+th{
+	font-size: 20px;
+	font-weight: 300;
+	color: green;
+}
+
+td{
+	font-size: 18px;
+	font-weight: 300;
+}
+
+#container{
+	width: 80%;
+	margin : 0px auto;
+}
+
+.user-image{
+	width: 40px;
+	height: 40px;
+	border : 1px solid black;	
+	border-radius: 5px;
+}
+
+.user-link{
+	padding-left: 15px;
+}
+
+.txtcenter{
+	text-align: center;
+}
+
+.underline{
+	text-decoration: underline;
+}
