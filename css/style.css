@@ -6,7 +6,7 @@ body{
 }
 
 h2{	
-	padding-top: 20px;
+	padding-top: 70px;
 	color: #228899;
 	font-weight: 400;
 	margin-bottom: 30px;
@@ -150,6 +150,11 @@ footer {
 	font-weight: 400;
 }
 
+
+#experience .col-10 h2{
+	padding-top: 50px;
+}
+
 @media (min-width: 768px) and (max-width: 991px) { 
 	.profile-pic{
 		width: 200px;
@@ -163,6 +168,10 @@ footer {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+	.navbar-nav{
+		margin-right: 5%;
+	}
+	
 	.profile-pic{
 		width: 200px;
 		border-radius: 0px;
@@ -176,20 +185,23 @@ footer {
 	.row-aboutme{
 		margin-left: -15px;
 	}
-	
-	/* .exp{
-		margin-left: -15px;
-	} */
 }
 
 @media (min-width: 1200px) { 
+	.navbar-nav{
+		margin-right: 5%;
+	}
+
+	.navbar-brand{
+		margin-left: 8%;
+	}
 	.profile-pic{
 		width: 250px;
 		border-radius: 5px;
 	}
 	
 	#profile-info{
-		margin-top: 70px;
+		margin-top: 90px;
 		text-align: left;
 		font-size: 30px;
 		font-weight: 400;		
@@ -199,8 +211,4 @@ footer {
 		max-width: 200px;
 		padding-left: 20px;
 	}
-
-	/* .exp{
-		text-align: center;
-	} */
 }
