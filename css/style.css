@@ -1,5 +1,5 @@
 body{
-	padding: 50px 0px 0px 0px;
+	padding-top: 50px;
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
 	position: relative;
@@ -9,16 +9,22 @@ h2{
 	padding-top: 20px;
 	color: #228899;
 	font-weight: 400;
-}
-
-h3{
-	background-color: #228899;
-	color: #fff;
-	font-weight: 300;
+	margin-bottom: 30px;
 }
 
 h4{
+	background-color: #228899;
+	color: #fff;
+	font-weight: 300;
+	padding: 10px 0px 10px 8px;
+}
+
+h5{
 	color: #D9585D;
+}
+
+h5 + p + p{
+	font-style: italic;
 }
 
 .btn-social-icon{
@@ -42,13 +48,10 @@ footer a{
 	top : 20%;
 }
 
-.row{
-	margin-top: 25px;
-	margin-bottom: 25px;
-}
-
 .profile-pic{
 	width: 150px;
+	display: flex;
+	margin: 0 auto;
 	border-radius: 50%;
 }
 
@@ -57,10 +60,6 @@ footer a{
 	text-align: center;
 	font-weight: 400;
 	font-size: 22px;
-}
-
-h2{
-	margin: 50px 0px 30px 0px;
 }
 
 .grey-bg{
@@ -76,17 +75,13 @@ h2{
 	font-weight: 300;
 }
 
-.row-content{
-	min-height: 550px;
-}
-
 .pro{
 	margin-top: 20px;
-	min-width: 200px;
-	max-width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
+	border-radius: 5px;
+	margin: 0 auto;
 	background: #333 url("../img/placeholder.png");
-		border-radius: 5px;
 }
 
 .proimg1{
@@ -135,28 +130,17 @@ h2{
 
 .projLink{
 	display: block;
-	max-width: 230px;
 	margin-top : 5px;
 	margin-bottom: 0px;
 	color: #228899;
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
-
 }
 
 .projDescription{
-	max-width: 230px;
 	font-weight: 300;
 	text-align: center;
-}
-
-h3{
-	padding: 10px 0px 10px 8px;
-}
-
-h4 + p + p{
-	font-style: italic;
 }
 
 footer {
@@ -164,19 +148,17 @@ footer {
 	padding: 10px 0px;
 	font-family: 'Bitter', serif;
 	font-weight: 400;
-
 }
 
 @media (min-width: 768px) and (max-width: 991px) { 
 	.profile-pic{
 		width: 200px;
-	} 
-	.row-content{
-		margin-right: -115px;
-		margin-left: -115px;
+		border-radius: 10px;
 	}
-	.row-aboutme{
-		margin-left: -105px;
+	
+	#profile-info{
+		margin-top: 60px;
+		text-align: left;
 	}
 }
 
@@ -187,7 +169,6 @@ footer {
 	}
 	#profile-info{
 		margin-top: 50px;
-		margin-left: 62px;
 		text-align: left;
 		font-size: 30px;
 		font-weight: 400;		
@@ -195,19 +176,10 @@ footer {
 	.row-aboutme{
 		margin-left: -15px;
 	}
-
-	.row-content{
-		margin-right: -115px;
-		margin-left: -115px;
-	}
 	
-	.exp-h1{
+	/* .exp{
 		margin-left: -15px;
-	}
-	
-	.exp{
-		margin-left: -15px;
-	}
+	} */
 }
 
 @media (min-width: 1200px) { 
@@ -218,24 +190,9 @@ footer {
 	
 	#profile-info{
 		margin-top: 70px;
-		margin-left: 62px;
 		text-align: left;
 		font-size: 30px;
 		font-weight: 400;		
-	}
-
-	.row-aboutme{
-		margin-left: -65px; 
-	}
-
-	.row-content{
-		margin-right: -75px;
-		margin-left: -75px;
-
-	}
-	
-	.pro{
-		margin-left: -15px;
 	}
 
 	.pro + p + p{
@@ -243,8 +200,7 @@ footer {
 		padding-left: 20px;
 	}
 
-
-	.exp{
+	/* .exp{
 		text-align: center;
-	}
+	} */
 }

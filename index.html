@@ -8,13 +8,8 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>Shaklin's Portfolio</title>
-	
 		 <!-- Bootstrap -->
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-		<!-- Bootstrap UI -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
+		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
 		
 		<!-- fontAwesom -->
@@ -34,27 +29,22 @@
 	    <![endif]-->
 	</head>
 
-	<body data-spy="scroll" data-target=".navbar" offset="50">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-		                <span class="sr-only">Toggle navigation</span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		            </button>
-	        	</div>
-				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-				    	<li class="active"><a href="#">Home</a></li>
-				    	<li><a href="#about-me">About Me</a></li>
-				    	<li><a href="#portfolio">Portfolio</a></li>
-				    	<li><a href="#experience">Experience</a></li>
-				  	</ul>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" role="navigation" id="menuNavigation">
+			<a class="navbar-brand" href="#">Shaklin Syed</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navbarContent" class="navbar-collapse collapse justify-content-end">
+				<div class="navbar-nav">
+					<a href="#" class="nav-item nav-link active">Home</a>
+					<a href="#about-me" class="nav-item nav-link">About Me</a>
+					<a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+					<a href="#experience" class="nav-item nav-link">Experience</a>
 				</div>
 			</div>
-		</nav>		
+		</nav>
 
 		<div id="social">
 			<a class="btn btn-social-icon btn-linkedin" target="_blank" href="https://www.linkedin.com/in/shaklin-syed-54b37980"><i class="fa fa-linkedin"></i> </a> <br />
@@ -63,170 +53,179 @@
             <a class="btn btn-social-icon btn-facebook" target="_blank" href="https://web.facebook.com/shaklin.syed"><i class="fa fa-facebook"></i> </a> 
 		</div>
 
+		<div class="container-fluid" data-spy="scroll" data-target="menuNavigation" data-offset="0">
+			<div id="home" class="row justify-content-center mt-5">
+				<div class="col-sm-8 col-md-3 order-0 order-md-12">
+					<img  class="profile-pic" src="img/profile.jpg" alt="Shaklin's Pic">
+				</div>
+				<p id="profile-info" class="col-sm-4 col-md-7 ">Hi My Name is Shaklin Syed, I'm a Full Stack Developer in Bengaluru.</p>
+			</div>
+
+			<div id="about-me" class="row row-aboutme justify-content-center">
+				<div class="col-10" >
+					<h2>About Me</h2>
+					<p>I am passionate about building web application. As a Full Stack Developer at <a href="http://travel.earth/" target="_blank">travel.earth</a> we are on the journey to inspire people around the world to travel.</p>
+				</div>
+			</div>
+
+			<div id="portfolio" class="row grey-bg justify-content-center">
+				<div class="col-10">
+					<h2>Portfolio</h2>
+				</div>
+			</div>
+
+			<div class="row grey-bg justify-content-center"> 
+				<div class="col-sm-10 col-md-4">
+					<a href="projects/calculator/index.html" target="_blank">
+						<div class="pro proimg2">	
+						</div>
+					</a>
+					<a class= "projLink" href="projects/calculator/index.html" target="_blank">Calculator</a>
+					<p class="projDescription">Light Weight Calculator</p>	
+				</div>
+
+				<div class="col-sm-10 col-md-4">
+					<a href="projects/quote_generator/index.html" target="_blank">
+						<div class="pro proimg1">	
+						</div>
+					</a>
+					<a class= "projLink" href="projects/quote_generator/index.html" target="_blank">Quote Machine</a>
+					<p class="projDescription">Simple Quote Generator</p>	
+				</div>
+
+				<div class="col-sm-10 col-md-4">
+					<a href="projects/pomodoro/index.html" target="_blank">
+						<div class="pro proimg3">	
+						</div>
+					</a>
+					<a class= "projLink" href="projects/pomodoro/index.html" target="_blank">Pomodoro Clock</a>	
+					<p class="projDescription">To keep track of Time during work</p>	
+				</div>
+
+				<div class="col-sm-10 col-md-4">
+					<a href="projects/ttt/index.html" target="_blank">
+						<div class="pro proimg9">
+						</div>
+					</a>
+					<a class= "projLink" href="projects/ttt/index.html" target="_blank">Tic-Tac-Toe</a>
+					<p class="projDescription">Implemented Using Minimax</p>	
+				</div>
+
+				<div class="col-sm-10 col-md-4">
+					<a href="projects/streamersInfo/index.html" target="_blank">
+						<div class="pro proimg10">
+						</div>
+					</a>
+					<a class= "projLink" href="projects/streamersInfo/index.html" target="_blank">Twitch API Implementation</a>
+					<p class="projDescription">Provides Streamers Info</p>	
+				</div>
+
+				<div class="col-sm-10 col-md-4">
+					<a href="projects/simon/index.html" target="_blank">
+						<div class="pro proimg11">
+						</div>
+					</a>
+					<a class= "projLink" href="projects/simon/index.html" target="_blank">Simon</a>
+					<p class="projDescription">A simple Simon Game</p>	
+				</div>
+
+				<div class="col-sm-10 col-md-4">
+					<a href="projects/tribute/index.html" target="_blank">
+						<div class="pro proimg4">
+						</div>
+					</a>
+					<a class= "projLink" href="projects/tribute/index.html" target="_blank">A Tribute Page</a>
+					<p class="projDescription">Timeline of Mahatma Gandhi</p>	
+				</div>
+
+				<div class="col-sm-10 col-md-4">	
+					<a href="projects/weather_app/index.html" target="_blank">
+						<div class="pro proimg5">
+						</div>					
+					</a>
+					<a class= "projLink" href="projects/weather_app/index.html" target="_blank">Weather App</a>	
+					<p class="projDescription">Weather forcast for today</p>	
+				</div>
+
+				<div class="col-sm-10 col-md-4">
+					<a href="projects/wikiSearch/index.html" target="_blank">
+						<div class="pro proimg6">
+						</div>
+					</a>
+					<a class= "projLink" href="projects/wikiSearch/index.html" target="_blank">Wiki Search</a>
+					<p class="projDescription">A Widget to Search Wikipedia</p>	
+				</div>
+
+				<div class="col-sm-10 col-md-4">
+					<a href="projects/snake/index.html" target="_blank">
+						<div class="pro proimg7">
+						</div>
+					</a>
+					<a class= "projLink" href="projects/snake/index.html" target="_blank">Snake Game</a>
+					<p class="projDescription">An Implementation of Snake Game</p>	
+				</div>
+
+				<div class="col-sm-10 col-md-4">
+					<a href="projects/tea_kettle/index.html" target="_blank">
+						<div class="pro proimg8">
+						</div>
+					</a>
+					<a class= "projLink" href="projects/tea_kettle/index.html" target="_blank">Catch Tea</a>
+					<p class="projDescription">A HTML5 Game</p>	
+				</div>
+				
+			</div>	
+
+			<div id="experience" class="row justify-content-center">
+				<div class="col-10">
+					<h2>Experience</h2>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-10">
+					<div class="row">
+						<div class="col-12 col-md-4">
+							<h4>Education</h3>
+							<h5>Vels University</h4>
+							<p>BE in Computer Science</p>
+							<p>May 2014</p>
+						</div>
 		
-			<div class="container">
-				<div id="home" class="row row-profile-home">
-					<div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-push-7 col-lg-4 col-lg-push-6 ">
-						<img  class="profile-pic center-block" src="img/profile.jpg" alt="Shaklin's Pic">
-					</div>
-					<p id="profile-info" class="col-xs-10 col-xs-offset-1 col-md-6 col-md-pull-5 ">Hi My Name is Shaklin Syed, I'm a Web Developer in Bengaluru.</p>
-				</div>
-
-				 <div id="about-me" class="row row-aboutme">
-					<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-lg-10 col-lg-offset-1" >
-						<h2>About Me</h2>
-						<p>I am passionate about building web application. As a Full Stack Developer at <a href="http://pytheoshealth.com/" target="_blank">Pytheos Health Systems</a> we are on the journey to make it easy for anyone to be healthy and fit.</p>
-					</div>
-				</div>
-
-
-				
-				<div id="portfolio" class="row row-content grey-bg"> 
-					<div class="col-xs-10 col-xs-offset-1 col-md-10  col-md-offset-1 col-lg-10 col-lg-offset-1">
-						<h2>Portfolio</h2>
-						
-						<div class="col-sm-6 col-lg-4">
-							<a href="projects/calculator/index.html" target="_blank">
-								<div class="pro proimg2">	
-								</div>
-							</a>
-							<a class= "projLink" href="projects/calculator/index.html" target="_blank">Calculator</a>
-							<p class="projDescription">Light Weight Calculator</p>	
+						<div class="col-12 col-md-4">
+							<h4>Work</h3>
+							<h5>Beatroute Technologies Pte Ltd.</h4>
+							<p>Full Stack Developer</p>
+							<p>November 2016 - May 2017</p>
+		
+							<h5>Pytheos Health Systems</h4>
+							<p>Full Stack Developer</p>
+							<p>July 2016 - Present</p>
+		
+							<h5>Sitel India</h4>
+							<p>Customer Service Professional</p>
+							<p>Dec 2014 - July 2015</p>
 						</div>
-
-
-						<div class="col-sm-6 col-lg-4">
-							<a href="projects/quote_generator/index.html" target="_blank">
-								<div class="pro proimg1">	
-								</div>
-							</a>
-							<a class= "projLink" href="projects/quote_generator/index.html" target="_blank">Quote Machine</a>
-							<p class="projDescription">Simple Quote Generator</p>	
-						</div>
-
-						
-						<div class="col-sm-6 col-lg-4">
-							<a href="projects/pomodoro/index.html" target="_blank">
-								<div class="pro proimg3">	
-								</div>
-							</a>
-							<a class= "projLink" href="projects/pomodoro/index.html" target="_blank">Pomodoro Clock</a>	
-							<p class="projDescription">To keep track of Time during work</p>	
-						</div>
-
-						<div class="col-sm-6 col-lg-4">
-							<a href="projects/ttt/index.html" target="_blank">
-								<div class="pro proimg9">
-								</div>
-							</a>
-							<a class= "projLink" href="projects/ttt/index.html" target="_blank">Tic-Tac-Toe</a>
-							<p class="projDescription">Implemented Using Minimax</p>	
-						</div>
-
-						<div class="col-sm-6 col-lg-4">
-							<a href="projects/streamersInfo/index.html" target="_blank">
-								<div class="pro proimg10">
-								</div>
-							</a>
-							<a class= "projLink" href="projects/streamersInfo/index.html" target="_blank">Twitch API Implementation</a>
-							<p class="projDescription">Provides Streamers Info</p>	
-						</div>
-
-						<div class="col-sm-6 col-lg-4">
-							<a href="projects/simon/index.html" target="_blank">
-								<div class="pro proimg11">
-								</div>
-							</a>
-							<a class= "projLink" href="projects/simon/index.html" target="_blank">Simon</a>
-							<p class="projDescription">A simple Simon Game</p>	
-						</div>
-						<div class="col-sm-6 col-lg-4">
-							<a href="projects/tribute/index.html" target="_blank">
-								<div class="pro proimg4">
-								</div>
-							</a>
-							<a class= "projLink" href="projects/tribute/index.html" target="_blank">A Tribute Page</a>
-							<p class="projDescription">Timeline of Mahatma Gandhi</p>	
-						</div>
-
-						<div class="col-sm-6 col-lg-4">	
-							<a href="projects/weather_app/index.html" target="_blank">
-								<div class="pro proimg5">
-								</div>					
-							</a>
-							<a class= "projLink" href="projects/weather_app/index.html" target="_blank">Weather App</a>	
-							<p class="projDescription">Weather forcast for today</p>	
-						</div>
-
-						<div class="col-sm-6 col-lg-4">
-							<a href="projects/wikiSearch/index.html" target="_blank">
-								<div class="pro proimg6">
-								</div>
-							</a>
-							<a class= "projLink" href="projects/wikiSearch/index.html" target="_blank">Wiki Search</a>
-							<p class="projDescription">A Widget to Search Wikipedia</p>	
-						</div>
-
-						<div class="col-sm-6 col-lg-4">
-							<a href="projects/snake/index.html" target="_blank">
-								<div class="pro proimg7">
-								</div>
-							</a>
-							<a class= "projLink" href="projects/snake/index.html" target="_blank">Snake Game</a>
-							<p class="projDescription">An Implementation of Snake Game</p>	
-						</div>
-
-						<div class="col-sm-6 col-lg-4">
-							<a href="projects/tea_kettle/index.html" target="_blank">
-								<div class="pro proimg8">
-								</div>
-							</a>
-							<a class= "projLink" href="projects/tea_kettle/index.html" target="_blank">Catch Tea</a>
-							<p class="projDescription">A HTML5 Game</p>	
-						</div>
-
-						
-					</div>
-				</div>	
-
-				
-				<div id="experience" class="row row-content">
-					<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-11 col-lg-10 col-lg-offset-1">
-						<h2 class="exp-h1">Experience</h2>
-						<div class="row">
-							<div class=" col-md-10 col-lg-4 exp">
-								<h3>Education</h3>
-								<h4>Vels University</h4>
-								<p>BE in Computer Science</p>
-								<p>May 2014</p>
-							</div>
-							<div class="col-md-10 col-lg-4 exp">
-								<h3>Work</h3>
-								<h4>Sitel India</h4>
-								<p>Customer Service Professional</p>
-								<p>Dec 2014 - July 2015</p>
-
-								<h4>Pytheos Health Systems</h4>
-								<p>Full Stack Developer</p>
-								<p>July 2016 - Present</p>
-							</div>
-							<div class=" col-md-10 col-lg-4 exp">
-								<h3>Accomplishments</h3>
-								<h4>Sitel India</h4>
-								<p>Best Agent Overall</p>
-								<p>Second Place - Feb 2015</p>
-							</div>
+		
+						<div class="col-12 col-md-4">
+							<h4>Accomplishments</h3>
+							<h5>Sitel India</h4>
+							<p>Best Agent Overall</p>
+							<p>Second Place - Feb 2015</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		
+		</div>
+
 		<footer>
 			Email-me : <a href="mail-to:shaklin.syed@gmail.com">shaklin.syed@gmail.com</a>
-		</footer> 
+		</footer> 		
+
 		<!-- Latest compiled and minified Bootstrap JavaScript -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 		
 		<script src="js/script.js"></script>
 		<script>
