@@ -32,16 +32,6 @@ h5 + p + p{
 	border-radius : 8px 0px 0px 8px;
 }
 
-footer{
-	background : #eee;
-	text-align: center;
-}
-
-footer a{
-	text-decoration: none;
-	color: #228899;
-}
-
 #social{
 	position: fixed;
 	right: -6px;
@@ -142,72 +132,25 @@ footer a{
 	border-radius: 0;
 }
 
-.pro{
-	margin-top: 20px;
-	width: 100px;
-	height: 100px;
-	border-radius: 5px;
-	margin: 0 auto;
-	background: #333 url("../img/placeholder.png");
+.logo-cont{
+	margin-bottom: 20px;
 }
 
-.proimg1{
-	background: #333 url("../img/quotes.png");
+.logo-cont img{
+	width: 80px;
+	margin-left: 10px;
 }
 
-.proimg2{
-	background: #333 url("../img/calculator.png");
+.logo-cont img.tech-css{
+	height: 80px;
 }
 
-.proimg3{
-	background: #333 url("../img/pomodoro.png");
+.logo-cont img.tech-jquery{
+	margin-top: 22px;
 }
 
-.proimg4{
-	background: #333 url("../img/tribute.png");
-}
-
-.proimg5{
-	background: #333 url("../img/weather.png");
-}
-
-.proimg6{
-	background: #333 url("../img/wikiSearch.png");
-}
-
-.proimg7{
-	background: #333 url("../img/snake.png");
-}
-
-.proimg8{
-	background: #333 url("../img/teaKettle.png");
-}
-
-.proimg9{
-	background: #333 url("../img/ttt.png");
-}
-
-.proimg10{
-	background: #333 url("../img/streamersInfo.png");
-}
-
-.proimg11{
-	background: #333 url("../img/simon.png");
-}
-
-.projLink{
-	display: block;
-	margin-top : 5px;
-	margin-bottom: 0px;
-	color: #228899;
-	font-size: 16px;
-	font-weight: bold;
-	text-align: center;
-}
-
-.projDescription{
-	font-weight: 300;
-	text-align: center;
+.logo-cont img.tech-react-native{
+	margin-top: 36px;
 }
 
 footer {
@@ -215,6 +158,13 @@ footer {
 	padding: 10px 0px;
 	font-family: 'Bitter', serif;
 	font-weight: 400;
+	background : #eee;
+	text-align: center;
+}
+
+footer a{
+	text-decoration: none;
+	color: #228899;
 }
 
 
