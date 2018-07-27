@@ -96,7 +96,8 @@ function getLocationPrice(priceString){
 
         
         let price = Number(priceString.replace('$',''));
-        return (price + (localStorage.priceDecider * price));
+        let finalPrice = price + (localStorage.priceDecider * price);
+        return (Math.round(finalPrice*100)/100);
     }
 }
 
