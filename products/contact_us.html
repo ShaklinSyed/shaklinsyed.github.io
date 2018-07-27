@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>
+            Experiences Contact Us 
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- custom css -->
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        
+            <!-- header -->
+            <div class="header">
+                <div class="logo-container">
+                        <p class="logo">Experiences</p>
+                </div>
+                <div class="menu-container">
+                        <ul class="menu">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+
+            <div class="contact-container">
+                <h2 class="exp-title">Got a Message ?</h2>
+                <div class="input-cont">
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+                    <p class="invalid-name hide">Name should be atleast three characters long.</p>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <p class="invalid-email hide">Please enter a valid email address.</p>
+                    <input type="mobile" name="mobile" id="mobile" placeholder="Mobile">
+                    <p class="invalid-mobile hide">Please enter a valid mobile number.</p>
+                    <textarea name="message" id="message" rows="3" placeholder="Message"></textarea>
+                    <p class="invalid-message hide">Message cannot be empty.</p>
+
+                    <button type="button">Send</button>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer contact-us">
+                <p>Copyright 2018 Experiences Pvt Ltd.</p>
+            </div>
+
+            <div class="model hide">
+                    <div class="sucess-conf hide">
+                            <p>Recieved your Message!!</p>
+                            <button id="sucess-btn">Okay</button>
+                    </div>
+                    <div class="error-conf hide">
+                            <p>There was error sending message</p>
+                            <button id="error-btn">Okay</button>
+                    </div>
+            </div>
+            
+
+
+        
+        <!-- Jquery  -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/contact_us.js"></script>
+
+    </body>
+</html>
